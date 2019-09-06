@@ -1,16 +1,16 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col-12">
-      <h1>All our Flats</h1>
+      <h1>空室</h1>
     </div>
   </div>
 
   <div class="row">
     <div class="col">
       <% if @query %>
-        <p>You searched for <strong><%= @query %></strong>. We found <%= @flats.count %> flats out of our <%= Flat.count %> on our website.</p>
+        <p>'<strong><%= @query %></strong>'で検索した結果、<strong><%= Flat.count %></strong> 部屋中、<strong><%= @flats.count %> </strong>部屋見つけました。</p>
       <% else %>
-        <p>All <%= Flat.count %> flats.</p>
+        <p>全 <%= Flat.count %> 部屋</p>
       <% end %>
     </div>
   </div>
