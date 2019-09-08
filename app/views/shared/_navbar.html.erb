@@ -1,0 +1,30 @@
+<div class="navbar-flat <%= yield(:navbar_class) %>">
+
+
+    <div class="navbar navbar-expand">
+    <%= link_to 'Airbnb', root_path, class: 'navbar-brand' %>
+
+
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav mr-auto">
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" name="query" type="search" placeholder="軽井沢" aria-label="Search" value="<%= params[:query] %>">
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">部屋を検索</button>
+              </form>
+
+          </div>
+              <%= link_to '部屋を登録', new_flat_path, class: 'btn btn-outline-success my-2 my-sm-0 ml-2' %>
+        </div>
+
+
+
+
+    </div>
+
+
+  </div>
+
+

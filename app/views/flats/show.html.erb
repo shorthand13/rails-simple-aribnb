@@ -1,9 +1,5 @@
 <div class="map" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @flat.picture_url%>')"></div>
 
-
-
-
-
 <div class="container margin-top-negative">
   <div class="row">
     <div class="col-8">
@@ -12,13 +8,13 @@
         <p class="flat-show-address"><%= @flat.address %></p>
       </div>
       <div class="flat-show-card">
-        <h3>A bit more about this flat...</h3>
+        <h3>おすすめポイント</h3>
         <p><%= @flat.description %></p>
 
         <!-- <a href="#" class="btn btn-outline-danger">Remove</a> -->
 
-       <%= link_to "Edit", edit_flat_path(@flat), class: "ml-3 text-warning" %>
-        <%= link_to "Remove", flat_path(@flat), class: "ml-3 text-danger", method: :delete, data: { confirm: "Delete this flat?" } %>
+       <%= link_to "編集", edit_flat_path(@flat), class: "ml-3 text-warning" %>
+        <%= link_to "削除", flat_path(@flat), class: "ml-3 text-danger", method: :delete, data: { confirm: "Delete this flat?" } %>
 
 
        <!--  <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=<%= @flat.address %>&zoom=13&scale=2&size=1000x1000&maptype=roadmap&markers=color:red%7C<%= @flat.address %>&key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div> -->
@@ -27,7 +23,7 @@
 
     <div class="col-4">
       <div class="flat-show-card">
-        <h5>Book this place!</h5>
+        <h5>予約</h5>
 
         <form action="">
           <div class="input-group">
@@ -42,7 +38,7 @@
         </form>
       </div>
       <div class="flat-show-card">
-        <h3>Details</h3>
+        <h4>詳細</h4>
         <div class="flex">
           <div class="flex">
             <i class="material-icons mr-2">people</i><span><%= @flat.number_of_guests %></span>
@@ -54,13 +50,13 @@
       </div>
       <div class="flat-show-card">
         <div class="flex-align">
-          <h6 class="no-mb">Share</h6>
+          <h5 class="no-mb ml-2">共有</h5>
 
           <div class="flex">
-            <i class="fa fa-facebook-square fa-2x mr-2"></i>
-            <i class="fa fa-twitter-square fa-2x mr-2"></i>
-            <i class="fa fa-pinterest-square fa-2x mr-2"></i>
-            <i class="fa fa-envelope-square fa-2x"></i>
+            <i class="fab fa-facebook-square fa-2x mr-2"></i>
+            <i class="fab fa-twitter-square fa-2x mr-2"></i>
+            <i class="fab fa-pinterest-square fa-2x mr-2"></i>
+            <i class="fas fa-envelope-square fa-2x"></i>
           </div>
         </div>
       </div>

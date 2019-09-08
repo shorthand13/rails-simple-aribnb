@@ -1,0 +1,48 @@
+.navbar-flat {
+  // display: flex;
+  background: white;
+
+  .navbar-expand {
+  justify-content: space-between;
+  }
+
+
+  a.navbar-brand {
+    color: black;
+  }
+
+  .navbar-collapse {
+  flex-grow: 0;
+  .btn {
+    font-weight: normal;
+    color: black;
+    font-size: 18px;
+  }
+  }
+}
+
+
+.navbar-home {
+  // display: flex;
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+  width: 100%;
+
+  .navbar-expand {
+  justify-content: space-between;
+  }
+
+  a.navbar-brand {
+    color: white;
+  }
+
+  .navbar-collapse {
+  flex-grow: 0;
+  .btn {
+    font-weight: normal;
+    color: white;
+    font-size: 18px;
+  }
+  }
+}
