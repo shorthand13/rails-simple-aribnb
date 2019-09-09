@@ -1,6 +1,7 @@
 .navbar-flat {
   // display: flex;
   background: #d7d7d7;
+  box-shadow: 0 5px 5px -5px #898889;
 
   .navbar-expand {
   justify-content: space-between;
@@ -15,7 +16,7 @@
   flex-grow: 0;
   .btn {
     font-weight: normal;
-    color: black;
+    color: white;
     font-size: 18px;
   }
   }

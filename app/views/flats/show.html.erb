@@ -8,15 +8,16 @@
         <p class="flat-show-address"><%= @flat.address %></p>
       </div>
       <div class="flat-show-card">
-        <h3>おすすめポイント</h3>
+        <h3 ml-3>おすすめポイント</h3>
         <p><%= @flat.description %></p>
 
         <!-- <a href="#" class="btn btn-outline-danger">Remove</a> -->
-
-       <%= link_to "編集", edit_flat_path(@flat), class: "ml-3 text-warning" %>
-        <%= link_to "削除", flat_path(@flat), class: "ml-3 text-danger", method: :delete, data: { confirm: "Delete this flat?" } %>
-
-
+        <div class="flat-show-links">
+           <%= link_to "編集", edit_flat_path(@flat), class: "btn btn-warning ml-3" %>
+           <%= link_to "戻る", :back, class: "btn btn-outline-secondary ml-3" %>
+            <%= link_to "削除", flat_path(@flat), class: "btn btn-danger ml-3", method: :delete, data: { confirm: "Delete this flat?" } %>
+           <%= link_to "一覧画面", flats_path, class: "btn btn-outline-secondary ml-3" %>
+        </div>
        <!--  <div class="map" style="background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=<%= @flat.address %>&zoom=13&scale=2&size=1000x1000&maptype=roadmap&markers=color:red%7C<%= @flat.address %>&key=AIzaSyBtaHK-BLhBg7TruJu8iKk_wETqZMJM-GY')"></div> -->
       </div>
     </div>

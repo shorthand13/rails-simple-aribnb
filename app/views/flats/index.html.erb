@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="flat-card-actions">
-            <%= link_to '詳細', flat_path(flat) %>
+            <%= link_to '詳細', flat_path(flat), class: "ml-2 text-secondary" %>
             <%= link_to "編集", edit_flat_path(flat), class: "ml-3 text-warning" %>
             <%= link_to "削除", flat_path(flat), class: "ml-3 text-danger", method: :delete, data: { confirm: "Delete this flat?" } %>
           </div>
